@@ -1,0 +1,239 @@
+/* styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/*------------------------Main Page------------------------*/
+.main-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../assets/starting.png'); 
+  background-size:cover;
+  background-position: center;
+}
+
+.main-content {
+  text-align: center;
+}
+
+.main-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.main-description {
+  font-size: 1.5rem;
+  max-width: 1000px; 
+}
+
+.btn {
+  background-color: white; 
+  color: black; 
+  border: none; 
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none; 
+  font-size: 16px; 
+  border-radius: 5px; 
+}
+
+.btn:hover {
+  background-color: #f0f0f0;
+}
+/*----------------------------------------------------------*/
+
+/*------------------------Home Page------------------------*/
+.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../assets/homepage.png');
+  background-size: cover;
+}
+
+.home-content {
+  text-align: center;
+}
+/*----------------------------------------------------------*/
+
+/*------------------------My Cars Page------------------------*/
+.mylist-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../assets/list.jpg');
+  background-size: cover;
+}
+
+.mylist-content {
+  text-align: center;
+}
+
+.mylist-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.mylist-record {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.record-column {
+  flex: 1;
+  text-align: center;
+}
+
+.record-column h3 {
+  font-size: 1.2rem; 
+   font-weight: bold; 
+}
+
+.mylist-card {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 20px;
+  width: 1000px;
+  height: 300px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999; /* Asigură că modalul este peste tot conținutul */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+}
+
+.modal-content {
+  color: black;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+/*----------------------------------------------------------*/
+
+/*------------------------Add Car Page------------------------*/
+.add-recipe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../assets/mylist.jpg');
+  background-size:cover;
+  background-position: center;
+}
+
+.add-recipe-form {
+  width: 800px;
+  padding: 20px;
+  background-color: rgba(17, 14, 14, 0.8); 
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.form-column {
+  flex: 1;
+  margin-right: 20px;
+}
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group button {
+  margin: 0 auto;
+  display: block; 
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: black;
+}
+
+.large-textarea {
+  height: 50px; /* Ajustează înălțimea după preferință */
+  width: 300px;
+  resize: vertical; 
+  color: black;
+}
+/*----------------------------------------------------------*/
+
+/*------------------------Virtual Assistant Page------------------------*/
+.chatpage-container {
+  background-image: url('../assets/assistant.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-container {
+  max-width: 700px;
+  height: 500px;
+  width: 100%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.9);
+ 
+}
