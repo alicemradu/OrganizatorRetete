@@ -93,4 +93,4 @@ Utilizatorii pot introduce ușor informațiile necesare despre fiecare rețetă 
 ## 5.5.	Pagina "Micul Bucatar"
 ![Screenshot](assets/6.png)
 
-Pagina "Virtual Assistant" servește ca un ghid interactiv pentru utilizatori în ceea ce privește informațiile despre vehiculele lor și piesele compatibile. Utilizatorii pot adresa întrebări variate, de la specificații despre mașină la recomandări pentru piese de schimb.
+Pagina "Micul Bucatar" servește ca un ghid interactiv pentru utilizatori în ceea ce privește informațiile despre vehiculele lor și piesele compatibile. Utilizatorii pot adresa întrebări variate, de la specificații despre mașină la recomandări pentru piese de schimb.
